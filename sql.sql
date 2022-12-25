@@ -25,9 +25,9 @@ CREATE TABLE videos(
     size int NOT NULL,
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
--- insert admin user and for all user passwords is 123
+-- insert admin user and for all user password is 123
 INSERT INTO users(name,email,password,role,can_download) VALUES('admin','admin@admin.com','$2b$05$K0fRkqLox3.fsDirqPPRVOsZf23uDx0MltIyvbbFb6vAMScjn8sum','admin',true);
-INSERT INTO users(name,email,password,role,can_download) VALUES('admin1','admin1@admin.com','$2b$05$K0fRkqLox3.fsDirqPPRVOsZf23uDx0MltIyvbbFb6vAMScjn8sum','user',true);
-INSERT INTO users(name,email,password,role,can_download) VALUES('admin2','admin2@admin.com','$2b$05$K0fRkqLox3.fsDirqPPRVOsZf23uDx0MltIyvbbFb6vAMScjn8sum','user',true);
-INSERT INTO users(name,email,password,role,can_download) VALUES('admin3','admin3@admin.com','$2b$05$K0fRkqLox3.fsDirqPPRVOsZf23uDx0MltIyvbbFb6vAMScjn8sum','user',true);
-INSERT INTO users(name,email,password,role,can_download) VALUES('admin4','admin4@admin.com','$2b$05$K0fRkqLox3.fsDirqPPRVOsZf23uDx0MltIyvbbFb6vAMScjn8sum','user',true);
+INSERT INTO users(name,email,password,role,can_download) VALUES('user1','user1@user.com','$2b$05$K0fRkqLox3.fsDirqPPRVOsZf23uDx0MltIyvbbFb6vAMScjn8sum','user',true);
+INSERT INTO users(name,email,password,role,can_download) VALUES('user2','user2@user.com','$2b$05$K0fRkqLox3.fsDirqPPRVOsZf23uDx0MltIyvbbFb6vAMScjn8sum','user',true);
+INSERT INTO users(name,email,password,role,can_download) VALUES('user3','user3@user.com','$2b$05$K0fRkqLox3.fsDirqPPRVOsZf23uDx0MltIyvbbFb6vAMScjn8sum','user',true);
+INSERT INTO users(name,email,password,role,can_download) VALUES('user4','user4@user.com','$2b$05$K0fRkqLox3.fsDirqPPRVOsZf23uDx0MltIyvbbFb6vAMScjn8sum','user',true);
